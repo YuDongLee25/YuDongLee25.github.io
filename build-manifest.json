@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-07-19T14:34:04.047Z",
+  "basePath": "/",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 18932
+    },
+    {
+      "path": "404.html",
+      "bytes": 598
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 267
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 165
+    },
+    {
+      "path": "assets/styles.css",
+      "bytes": 10680
+    },
+    {
+      "path": "assets/site.js",
+      "bytes": 26351
+    },
+    {
+      "path": "assets/profile.jpg",
+      "bytes": 70850
+    },
+    {
+      "path": "assets/favicon.svg",
+      "bytes": 252
+    },
+    {
+      "path": "assets/schools/sustech-logo.png",
+      "bytes": 28647
+    },
+    {
+      "path": "assets/schools/scau-logo.png",
+      "bytes": 379347
+    },
+    {
+      "path": "assets/Yudong-Li-Academic-CV.pdf",
+      "bytes": 109599
+    },
+    {
+      "path": "assets/Yudong-Li-CV-ZH.pdf",
+      "bytes": 333353
+    },
+    {
+      "path": "assets/media/figures/gnn-framework.png",
+      "bytes": 606694
+    },
+    {
+      "path": "assets/media/figures/iros-framework.png",
+      "bytes": 357757
+    },
+    {
+      "path": "assets/media/gimbal/mechanical-design.png",
+      "bytes": 176417
+    },
+    {
+      "path": "assets/media/gimbal/prototype-demo.mp4",
+      "bytes": 2501868
+    },
+    {
+      "path": "assets/media/gnn-a10-dynamic.mp4",
+      "bytes": 657741
+    },
+    {
+      "path": "assets/media/gnn-a10-static.mp4",
+      "bytes": 223546
+    },
+    {
+      "path": "assets/media/gnn-kd7-dynamic.mp4",
+      "bytes": 272378
+    },
+    {
+      "path": "assets/media/gnn-kd7-static.mp4",
+      "bytes": 127023
+    },
+    {
+      "path": "assets/media/iros-semantic-exploration.mp4",
+      "bytes": 2706362
+    },
+    {
+      "path": "assets/media/mpc/control-architecture.jpg",
+      "bytes": 25677
+    },
+    {
+      "path": "assets/media/mpc/walking-demo-1.mp4",
+      "bytes": 205973
+    },
+    {
+      "path": "assets/media/mpc/walking-demo-2.mp4",
+      "bytes": 243062
+    },
+    {
+      "path": "assets/media/mpc/walking-result-1.jpg",
+      "bytes": 19641
+    },
+    {
+      "path": "assets/media/mpc/walking-result-2.jpg",
+      "bytes": 18765
+    },
+    {
+      "path": "assets/media/mpc/walking-result-3.jpg",
+      "bytes": 19415
+    },
+    {
+      "path": "assets/media/mpc/walking-result-4.jpg",
+      "bytes": 16843
+    },
+    {
+      "path": "assets/media/posters/gnn-kd7-dynamic.jpg",
+      "bytes": 54840
+    },
+    {
+      "path": "assets/media/posters/gnn-kd7-static.jpg",
+      "bytes": 53888
+    },
+    {
+      "path": "assets/media/posters/iros-semantic-exploration.jpg",
+      "bytes": 63663
+    },
+    {
+      "path": "assets/media/ppo/robot-evaluation.mp4",
+      "bytes": 599166
+    },
+    {
+      "path": "assets/media/ppo/simulation.mp4",
+      "bytes": 1206144
+    },
+    {
+      "path": "assets/media/ppo/training-diagnostics.png",
+      "bytes": 128201
+    },
+    {
+      "path": "assets/media/robomaster/demo-1.mp4",
+      "bytes": 890604
+    },
+    {
+      "path": "assets/media/robomaster/demo-2.mp4",
+      "bytes": 1054455
+    },
+    {
+      "path": "assets/media/robomaster/demo-3.mp4",
+      "bytes": 4855679
+    },
+    {
+      "path": "assets/media/robomaster/robot-platform.jpg",
+      "bytes": 25570
+    },
+    {
+      "path": "assets/media/zhiyuan/internship-demo.mp4",
+      "bytes": 16307523
+    },
+    {
+      "path": "assets/media/zhiyuan/platform-photo.png",
+      "bytes": 312484
+    }
+  ]
+}

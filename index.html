@@ -1,16 +1,256 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Yudong Li | Research Summary</title>
-    <meta http-equiv="refresh" content="0; url=assets/projects/Yudong-Li-Research-Summary.pdf">
-    <link rel="canonical" href="assets/projects/Yudong-Li-Research-Summary.pdf">
-  </head>
-  <body>
-    <p>
-      Opening research summary PDF.
-      <a href="assets/projects/Yudong-Li-Research-Summary.pdf">Open it manually</a>.
-    </p>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yudong Li is a master's student at SUSTech working on robot learning, motion planning, embodied navigation, and closed-loop control.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yudong Li | Robotics Research">
+  <meta property="og:description" content="Academic homepage of Yudong Li: robot planning, motion control, embodied autonomy, simulation, and real-robot systems.">
+  <meta property="og:url" content="https://yudonglee25.github.io/">
+  <meta property="og:site_name" content="Yudong Li">
+  <title>Yudong Li | Robotics Research</title>
+  <link rel="canonical" href="https://yudonglee25.github.io/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="#about" aria-label="Yudong Li, top of page">Yudong Li</a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Internships</a>
+          <a href="#education">Education</a>
+          <a href="/assets/Yudong-Li-Academic-CV.pdf" data-cv-link target="_blank" rel="noopener noreferrer">CV</a>
+        </nav>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="切换为中文" aria-pressed="false">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section id="about" class="profile section-anchor" aria-labelledby="profile-name">
+      <figure class="profile-photo">
+        <img src="/assets/profile.jpg" alt="Portrait of Yudong Li" width="600" height="750">
+      </figure>
+      <div class="profile-copy">
+        <h1 id="profile-name">Yudong Li</h1>
+        <p class="position"><strong>M.Sc. Student in Intelligent Manufacturing and Robotics</strong><br>
+          Department of Mechanical and Energy Engineering<br>
+          Southern University of Science and Technology</p>
+        <p>I am a master's student in Intelligent Manufacturing and Robotics at the Southern University of Science and Technology, following a B.Eng. in Automation at South China Agricultural University. My research focuses on robot planning, control, and embodied autonomy. I have worked on semantic object exploration for legged robots, structure-aware generative motion planning for manipulators, and learning- and model-based biped control. Across these projects, I develop planning and control components, evaluate them in simulation, and contribute to integration and validation on real robot platforms.</p>
+        <p class="profile-links">
+          <a href="mailto:yudongli2023@163.com">Email</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://github.com/YuDongLee25" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+          <span aria-hidden="true">/</span>
+          <a href="/assets/Yudong-Li-Academic-CV.pdf" data-cv-link target="_blank" rel="noopener noreferrer">CV</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="interests" class="content-section section-anchor" aria-labelledby="interests-title">
+      <h2 id="interests-title">Research Interests</h2>
+      <p>My research interests include robot trajectory planning and motion control, robot learning, embodied navigation and manipulation, and embedded robotic systems. I also have extensive experience in robot simulation, system integration, and debugging on real robot platforms.</p>
+      <div class="expertise-block" aria-labelledby="expertise-title">
+        <h3 id="expertise-title">Technical Expertise</h3>
+        <div class="expertise-grid">
+          <div class="expertise-item">
+            <h4>Planning and Control</h4>
+            <p>Trajectory representation, interpolation, and generation; GNN and diffusion models; MPPI-MPC, MPC-QP, PPO, robot kinematics and dynamics, PID control, and system identification.</p>
+          </div>
+          <div class="expertise-item">
+            <h4>Perception and Autonomy</h4>
+            <p>RGB-D, LiDAR, ToF, point-cloud processing, semantic segmentation, semantic map construction, confidence calibration, object detection, target tracking and motion prediction, GroundingDINO, SAM, YOLO, and AnyGrasp.</p>
+          </div>
+          <div class="expertise-item">
+            <h4>Simulation and Deployment</h4>
+            <p>ROS/ROS2, NVIDIA Isaac Sim, Isaac Gym, MuJoCo, and Webots, with simulation and real-robot validation on manipulators, bipeds, and quadrupeds.</p>
+          </div>
+          <div class="expertise-item">
+            <h4>Embedded Systems</h4>
+            <p>C/C++, Python, Linux, STM32, FreeRTOS, CAN, UART, SPI, USB, IMU and encoder integration, Kalman filtering, and cascaded PID control.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="content-section section-anchor" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications and Patents</h2>
+      <article id="pub-iros" class="publication-item">
+        <h3>Decision-Driven Semantic Object Exploration for Legged Robots via Confidence-Calibrated Perception and Topological Subgoal Selection</h3>
+        <p class="authors">Guoyang Zhao*, <strong>Yudong Li*</strong>, Weiqing Qi, Kai Zhang, Bonan Liu, Kai Chen, Haoang Li, and Jun Ma</p>
+        <p class="venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2026. Accepted. *Equal contribution.</p>
+        <p class="item-links">
+          <a href="https://arxiv.org/abs/2509.20739" target="_blank" rel="noopener noreferrer">Paper<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="#semantic-exploration">Project</a>
+          <button class="text-button" type="button" data-bibtex>Copy BibTeX</button>
+        </p>
+        <pre id="bibtex" class="bibtex" hidden>@misc{zhao2025decision,
+  title={Decision-Driven Semantic Object Exploration for Legged Robots via Confidence-Calibrated Perception and Topological Subgoal Selection},
+  author={Zhao, Guoyang and Li, Yudong and Qi, Weiqing and Zhang, Kai and Liu, Bonan and Chen, Kai and Li, Haoang and Ma, Jun},
+  year={2025},
+  eprint={2509.20739},
+        archivePrefix={arXiv},
+  primaryClass={cs.RO}
+}</pre>
+      </article>
+
+      <article id="pub-gimbal" class="publication-item publication-item-secondary">
+        <h3>一种用于农业巡检机器人的云台系统设计与样机实验</h3>
+        <p class="authors"><strong>李煜东</strong>，黄泽灏，黄增航，冯国健，梁柏林</p>
+        <p class="venue"><em>南方农机</em>，2023，54(22)：24–27。第一作者。</p>
+        <p class="item-links"><a href="https://doi.org/10.3969/j.issn.1672-3872.2023.22.007" target="_blank" rel="noopener noreferrer">DOI<span class="sr-only"> (opens in a new tab)</span></a></p>
+      </article>
+
+      <article id="pub-chassis" class="publication-item publication-item-secondary">
+        <h3>一种丘陵山地农田自适应机械底盘结构设计与试验</h3>
+        <p class="authors">黄泽凯，<strong>李煜东</strong>，黄增航，等</p>
+        <p class="venue"><em>南方农机</em>，2023，54(23)：31–35。第二作者。</p>
+        <p class="item-links"><a href="https://doi.org/10.3969/j.issn.1672-3872.2023.23.010" target="_blank" rel="noopener noreferrer">DOI<span class="sr-only"> (opens in a new tab)</span></a></p>
+      </article>
+
+      <article id="patent-platform" class="publication-item publication-item-secondary">
+        <h3><a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui" target="_blank" rel="noopener noreferrer">一种用于果蔬运输的运载缓震自稳平台<span class="sr-only"> (opens in a new tab)</span></a></h3>
+        <p class="authors">陈健超，翁宗标，梁智恒，<strong>李煜东</strong>，陈秋杰，王蕾</p>
+        <p class="venue">Utility model patent.</p>
+      </article>
+    </section>
+
+    <section id="research" class="content-section section-anchor" aria-labelledby="research-title">
+      <h2 id="research-title">Selected Research Projects</h2>
+
+      <article id="semantic-exploration" class="research-item section-anchor">
+        <div class="research-meta">2025</div>
+        <div>
+          <h3>Semantic Object Exploration for Legged Robots</h3>
+          <p class="research-summary">A decision-driven exploration system for converting natural-language instructions and uncertain semantic observations into stable topological memory and executable subgoals. The work integrates confidence-calibrated perception, controlled-growth semantic topology, semantic utility-based subgoal selection, local planning, and learned locomotion control. I contributed as a co-first author to semantic perception and memory components, planning integration, and closed-loop evaluation in NVIDIA Isaac Sim and on a Unitree Go1 robot.</p>
+          <p class="item-links"><a href="https://arxiv.org/abs/2509.20739" target="_blank" rel="noopener noreferrer">Paper<span class="sr-only"> (opens in a new tab)</span></a></p>
+          <div class="local-media-slot" data-preview-media="iros-framework" aria-live="polite"></div>
+          <div class="local-media-slot" data-preview-media="iros" aria-live="polite"></div>
+        </div>
+      </article>
+
+      <article id="gnn-diffusion" class="research-item section-anchor">
+        <div class="research-meta">2024–present</div>
+        <div>
+          <h3>Cross-Configuration GNN-Diffusion Manipulator Trajectory Planning with Receding-Horizon MPPI-MPC Terminal-Error Recovery</h3>
+          <p class="research-summary">A structure-aware manipulator trajectory-planning framework that represents robot configurations as URDF-derived graphs, encodes robot morphology with a GNN, and uses the resulting representation to condition a Diffusion Model that generates joint-space B-spline trajectories while incorporating differentiable kinematic constraints. A receding-horizon MPPI-MPC terminal-error recovery module addresses residual end-effector error, target updates, joint-limit proximity, and singular configurations. I developed the graph representation, trajectory-generation pipeline, constraint integration, and recovery module, and validated the system across five manipulator configurations in NVIDIA Isaac Sim and on KD7/A10 real robots. Experiments cover cross-configuration trajectory generation, grasp-pose reaching, dynamic target tracking, and receding-horizon terminal-error recovery.</p>
+          <div class="local-media-slot" data-preview-media="gnn-framework" aria-live="polite"></div>
+          <div class="local-media-slot" data-preview-media="gnn" aria-live="polite"></div>
+        </div>
+      </article>
+
+      <article id="ppo-biped" class="research-item section-anchor">
+        <div class="research-meta">2024–2025</div>
+        <div>
+          <h3>PPO-based Biped Locomotion with Sim-to-Real Evaluation</h3>
+          <p class="research-summary">A point-foot biped locomotion project using PPO in Isaac Gym. Curriculum learning progressively increased task and terrain difficulty, while dynamics randomization covered variations in mass, friction, damping, and observations. I implemented the training workflow, reward and curriculum components, and MuJoCo Sim-to-Sim validation, and contributed to TRON2 deployment and debugging.</p>
+          <div class="local-media-slot" data-preview-media="ppo" aria-live="polite"></div>
+        </div>
+      </article>
+
+      <article id="biped-mpc" class="research-item section-anchor">
+        <div class="research-meta">2023–2024</div>
+        <div>
+          <h3>Centroidal MPC for Bipedal Walking</h3>
+          <p class="research-summary">An undergraduate thesis project on predictive biped control using a simplified centroidal dynamics model. The controller formulates contact-force and moment optimization as a constrained MPC-QP, incorporates friction and normal-force limits, and combines the optimized contact quantities with swing-leg Cartesian PD control. I implemented the optimization and control pipeline and evaluated walking behavior in MATLAB/Simulink and MuJoCo.</p>
+          <div class="local-media-slot" data-preview-media="mpc-framework" aria-live="polite"></div>
+          <div class="local-media-slot" data-preview-media="mpc" aria-live="polite"></div>
+        </div>
+      </article>
+
+      <article id="gimbal-project" class="research-item">
+          <div class="research-meta">May 2022–Nov 2023</div>
+          <div>
+            <h3>Three-axis Stabilization Gimbal</h3>
+            <p class="role">Embedded Systems Lead</p>
+            <p class="research-summary">Developed an STM32/FreeRTOS prototype with IMU-based state estimation, Kalman filtering, system identification, cascaded PID control, and closed-loop hardware testing.</p>
+            <div class="local-media-slot" data-preview-media="gimbal" aria-live="polite"></div>
+          </div>
+      </article>
+      <article id="robomaster-project" class="research-item">
+          <div class="research-meta">Aug 2021–Aug 2022</div>
+          <div>
+            <h3>RoboMaster Embedded Control and System Integration</h3>
+            <p class="role">Embedded Software Lead</p>
+            <p class="research-summary">Developed gimbal and chassis control, power management, CAN/UART/SPI communication, referee-system parsing, fault detection, and full-system integration for RoboMaster sentinel and infantry robots.</p>
+            <div class="local-media-slot" data-preview-media="robomaster" aria-live="polite"></div>
+          </div>
+      </article>
+    </section>
+
+    <section id="experience" class="content-section section-anchor" aria-labelledby="experience-title">
+      <h2 id="experience-title">Internship Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Feb–Jun 2025</div>
+          <div><h3>Hong Kong University of Science and Technology (Guangzhou)</h3><p class="role">Research Intern</p><p>Worked on semantic object exploration and embodied navigation, including confidence-aware semantic decision making, topological representation, local planning, and closed-loop validation in Isaac Sim and on a Unitree quadruped. This work led to the IROS 2026 paper listed above.</p></div>
+        </article>
+    <article class="timeline-item">
+      <div class="timeline-date">Mar–May 2026</div>
+      <div><h3>Zhiyuan Robotics (AgiBot)</h3><p class="role">Perception and Planning Algorithm Intern</p><p>Contributed to multi-sensor perception, point-cloud processing, object detection, segmentation and tracking, semantic navigation, and testing in Isaac Sim and on a quadruped platform.</p><div class="local-media-slot" data-preview-media="zhiyuan" aria-live="polite"></div></div>
+    </article>
+    <article class="timeline-item">
+      <div class="timeline-date">Jul–Aug 2022</div>
+      <div><h3>DJI</h3><p class="role">Power Control Algorithm Intern</p><p>Contributed to a 24 V/40 A bidirectional supercapacitor digital power system, including ADC acquisition and filtering, Buck-Boost dual-loop control, PWM regulation, protection logic, and board-level debugging.</p></div>
+    </article>
+  </div>
+</section>
+
+    <section id="education" class="content-section section-anchor" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="education-list">
+        <article class="education-item">
+          <div class="education-date">2024–2027 expected</div>
+          <div class="education-main">
+            <img class="education-logo" src="/assets/schools/sustech-logo.png" alt="Southern University of Science and Technology emblem" width="190" height="189" loading="lazy">
+            <div><h3>Southern University of Science and Technology</h3><p>M.Sc. in Intelligent Manufacturing and Robotics<br>Department of Mechanical and Energy Engineering</p></div>
+          </div>
+        </article>
+        <article class="education-item">
+          <div class="education-date">2019–2024</div>
+          <div class="education-main">
+            <img class="education-logo" src="/assets/schools/scau-logo.png" alt="South China Agricultural University emblem" width="2356" height="2356" loading="lazy">
+            <div><h3>South China Agricultural University</h3><p>B.Eng. in Automation<br>Class rank: 4/107</p></div>
+          </div>
+        </article>
+      </div>
+      <aside id="cv" class="cv-note section-anchor" aria-labelledby="cv-title">
+        <h3 id="cv-title">Curriculum Vitae</h3>
+        <a class="cv-download" href="/assets/Yudong-Li-Academic-CV.pdf" data-cv-link target="_blank" rel="noopener noreferrer">View English Academic CV (PDF)<span class="sr-only"> (opens in a new tab)</span></a>
+      </aside>
+    </section>
+
+    <section id="awards" class="content-section section-anchor" aria-labelledby="awards-title">
+      <h2 id="awards-title">Selected Awards</h2>
+      <ul class="awards-list">
+        <li><span>2023</span> National First Prize, 8th International College Student Intelligent Agricultural Equipment Innovation Competition</li>
+        <li><span>2023</span> Third Prize, Guangdong Regional Contest, China Robot and Artificial Intelligence Competition</li>
+        <li><span>2022</span> First Prize, Guangdong Engineering Student Experimental Skills Competition</li>
+        <li><span>2022</span> National First Prize, RoboMaster 2022 Super Competition</li>
+        <li><span>2022</span> National First Prize, RoboMaster 2022 Sentinel Robot Practical Combat Award</li>
+        <li><span>2022</span> First Prize, RoboMaster 2022 Southern Regional Competition</li>
+        <li><span>2022–2023</span> Second-class Scholarship, South China Agricultural University</li>
+        <li><span>2020–2022</span> Third-class Scholarship, South China Agricultural University (two academic years)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer section-anchor">
+    <div class="footer-inner">
+      <p><strong>Yudong Li</strong><br>Shenzhen, China</p>
+      <p><a href="mailto:yudongli2023@163.com">yudongli2023@163.com</a><br><a href="https://github.com/YuDongLee25" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
 </html>

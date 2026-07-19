@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /__preview_media__/
+Disallow: /assets/media/
+Disallow: /assets/Yudong-Li-Academic-CV.pdf
+Disallow: /assets/Yudong-Li-CV-ZH.pdf
+Disallow: /*.mp4$
+Disallow: /*.mov$
+Disallow: /*.webm$
+
+Sitemap: https://yudonglee25.github.io/sitemap.xml
