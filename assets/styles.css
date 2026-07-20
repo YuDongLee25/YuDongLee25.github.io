@@ -31,6 +31,30 @@ button { font: inherit; }
 .skip-link { position: fixed; z-index: 100; top: 8px; left: 8px; padding: 8px 12px; color: #fff; background: var(--ink); transform: translateY(-150%); }
 .skip-link:focus { transform: none; }
 
+.page-watermark {
+  position: fixed;
+  z-index: 60;
+  inset: -8vh -8vw;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(230px, 1fr));
+  grid-template-rows: repeat(6, 1fr);
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+.page-watermark span {
+  align-self: center;
+  justify-self: center;
+  color: rgba(23, 79, 122, .085);
+  font-family: var(--sans);
+  font-size: clamp(.56rem, .82vw, .72rem);
+  font-weight: 650;
+  letter-spacing: .055em;
+  line-height: 1;
+  white-space: nowrap;
+  transform: rotate(-24deg);
+}
+
 .site-header {
   position: sticky;
   z-index: 20;
@@ -155,6 +179,10 @@ h4 { margin: 0 0 5px; font-size: .92rem; font-weight: 700; line-height: 1.4; }
   -webkit-user-drag: none;
   user-select: none;
 }
+.media-item video::-webkit-media-controls-fullscreen-button,
+.media-item video::-webkit-media-controls-picture-in-picture-button {
+  display: none !important;
+}
 .media-item img {
   height: auto;
   max-height: 430px;
@@ -221,6 +249,10 @@ h4 { margin: 0 0 5px; font-size: .92rem; font-weight: 700; line-height: 1.4; }
 
 @media (max-width: 760px) {
   body { font-size: 16px; }
+  .page-watermark {
+    grid-template-columns: repeat(2, minmax(190px, 1fr));
+    grid-template-rows: repeat(12, 1fr);
+  }
   .header-inner { align-items: flex-start; flex-direction: column; gap: 4px; padding-block: 10px; }
   .header-actions { width: 100%; align-items: center; justify-content: space-between; gap: 14px; }
   .site-nav { gap: 9px 16px; padding-bottom: 3px; }
@@ -245,7 +277,7 @@ h4 { margin: 0 0 5px; font-size: .92rem; font-weight: 700; line-height: 1.4; }
 
 @media print {
   body { font-size: 11pt; color: #000; }
-  .site-header, .skip-link, .text-button, .language-toggle { display: none !important; }
+  .site-header, .skip-link, .text-button, .language-toggle, .page-watermark { display: none !important; }
   .local-preview-notice, .local-media-slot { display: none !important; }
   .page-shell, .footer-inner, .footer-note { width: 100%; }
   .profile { grid-template-columns: 130px 1fr; padding-top: 0; }

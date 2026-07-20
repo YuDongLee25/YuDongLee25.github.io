@@ -413,7 +413,7 @@
       ${group.items.map((item) => `<figure class="media-item media-item-${item.type}">
         ${item.type === "image"
           ? `<img src="${item.src}" alt="${item.alt}" loading="lazy">`
-          : `<video controls controlslist="nodownload noremoteplayback" muted loop preload="none" playsinline disablepictureinpicture disableremoteplayback draggable="false" ${item.poster ? `poster="${item.poster}"` : ""} aria-label="${item.title}">
+          : `<video controls controlslist="nodownload nofullscreen noremoteplayback" muted loop preload="none" playsinline disablepictureinpicture disableremoteplayback draggable="false" ${item.poster ? `poster="${item.poster}"` : ""} aria-label="${item.title}">
               <source src="${item.src}" type="video/mp4">
               Your browser does not support embedded video.
             </video>`}
@@ -422,11 +422,12 @@
     </div>`;
     slot.querySelectorAll("video").forEach((video) => {
       video.muted = true;
-      video.controlsList?.add("nodownload", "noremoteplayback");
+      video.controlsList?.add("nodownload", "nofullscreen", "noremoteplayback");
       video.disablePictureInPicture = true;
       video.disableRemotePlayback = true;
       video.addEventListener("contextmenu", (event) => event.preventDefault());
       video.addEventListener("dragstart", (event) => event.preventDefault());
+      video.addEventListener("dblclick", (event) => event.preventDefault());
     });
   });
 
