@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   const legacyRoutes = {
     "/research/": "/#research",
     "/publications/": "/#publications",
@@ -55,8 +55,8 @@
     "#semantic-exploration h3": "面向腿足机器人的语义目标探索",
     "#semantic-exploration .research-summary": "该研究面向开放环境下的腿足机器人，探讨如何依据自然语言指令与不确定的语义观测完成目标选择和路径规划。系统集成置信度校准的语义感知、受控增长的语义拓扑记忆、基于效用的子目标选择、局部规划及强化学习运动控制。以共同第一作者身份参与语义感知、拓扑记忆与规划模块的设计和集成，并在 NVIDIA Isaac Sim 与 Unitree Go1 实机平台上完成闭环验证。",
     "#semantic-exploration .item-links a": "论文<span class='sr-only'>（在新标签页打开）</span>",
-    "#gnn-diffusion h3": "跨构型 GNN-Diffusion 机械臂轨迹规划与 MPPI-MPC 末端误差滚动恢复",
-    "#gnn-diffusion .research-summary": "面向不同构型的机械臂，将 URDF 模型转换为图结构，并通过 GNN 编码机器人形态；以形态表征作为条件，基于 Diffusion Model 生成关节空间的 B-spline 轨迹，同时引入可微运动学约束。针对末端残差、目标更新、关节限位与奇异位形，设计 MPPI-MPC 末端误差滚动恢复模块。主要工作包括图表示、轨迹生成、约束集成和恢复模块开发，以及在 NVIDIA Isaac Sim 中对五种机械臂构型的验证和 KD7、A10 实机部署测试。实验内容涵盖跨构型轨迹生成、抓取位姿到达、动态目标跟踪与末端误差恢复。",
+    "#gnn-diffusion h3": "基于本体模态（Embodiment Modality）条件的跨构型机械臂动作生成模型",
+    "#gnn-diffusion .research-summary": "面向不同机械臂因自由度、运动学拓扑与物理参数差异导致动作经验难以跨平台迁移的问题，将机器人“自身是什么”从固定的平台先验提升为可学习的本体模态（Embodiment Modality），将跨构型动作生成建模为 <em>Embodiment × Task → Action</em> 的多模态条件生成问题。基于 URDF 构建关节—连杆图，通过 Edge-conditioned GIN Encoder 编码机器人拓扑、关节属性及物理参数，获得统一的本体模态表征；以 Temporal U-Net Diffusion Model 作为动作生成器，通过 AdaLN 与 Cross-Attention 联合融合本体模态和目标位姿条件，并在 B-spline 控制点空间生成连续关节轨迹，从多种机械臂数据中学习共享的 motion prior。针对真实执行中的残余误差与目标变化，进一步引入 MPPI-MPC 进行终端在线滚动恢复。在 NVIDIA Isaac Sim 五种机械臂上进行未见构型 zero-shot 动作生成验证，平均成功率达到 74.3%；经目标平台数据适配后，在 KD7/A10 实机实现 91.7%/96.7% 的静态位姿到达成功率及 86.7%/95.0% 的扰动恢复成功率。",
     "#ppo-biped h3": "基于 PPO 的双足运动控制与 Sim-to-Real 评估",
     "#ppo-biped .research-summary": "基于 Isaac Gym 和 PPO 训练点足双足机器人的运动策略。课程学习用于逐步提升指令与地形难度，动力学随机化涵盖质量、摩擦、阻尼和观测扰动。主要工作包括训练流程、奖励函数与课程学习模块的实现、MuJoCo Sim-to-Sim 验证，以及 TRON2 实机部署与调试。",
     "#biped-mpc h3": "双足行走的质心动力学 MPC",
@@ -472,4 +472,5 @@
 
   enableProjectMedia();
 })();
+
 
