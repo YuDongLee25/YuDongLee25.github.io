@@ -155,8 +155,8 @@
       <article id="gnn-diffusion" class="research-item section-anchor">
         <div class="research-meta">2024–present</div>
         <div>
-          <h3>Cross-Configuration GNN-Diffusion Manipulator Trajectory Planning with Receding-Horizon MPPI-MPC Terminal-Error Recovery</h3>
-          <p class="research-summary">A structure-aware manipulator trajectory-planning framework that represents robot configurations as URDF-derived graphs, encodes robot morphology with a GNN, and uses the resulting representation to condition a Diffusion Model that generates joint-space B-spline trajectories while incorporating differentiable kinematic constraints. A receding-horizon MPPI-MPC terminal-error recovery module addresses residual end-effector error, target updates, joint-limit proximity, and singular configurations. I developed the graph representation, trajectory-generation pipeline, constraint integration, and recovery module, and validated the system across five manipulator configurations in NVIDIA Isaac Sim and on KD7/A10 real robots. Experiments cover cross-configuration trajectory generation, grasp-pose reaching, dynamic target tracking, and receding-horizon terminal-error recovery.</p>
+          <h3>Embodiment-Modality-Conditioned Action Generation for Cross-Configuration Manipulators</h3>
+          <p class="research-summary">To address the limited transfer of action experience across manipulators with different degrees of freedom, kinematic topologies, and physical parameters, this work treats robot embodiment—not as a fixed platform prior, but as a learnable <em>Embodiment Modality</em>—and formulates cross-configuration action generation as a multimodal conditional generation problem: <em>Embodiment × Task → Action</em>. A joint–link graph constructed from URDF is encoded by an edge-conditioned GIN Encoder to obtain a unified representation of robot topology, joint attributes, and physical parameters. A Temporal U-Net Diffusion Model fuses the embodiment modality and goal-pose condition through AdaLN and cross-attention, then generates continuous joint trajectories in B-spline control-point space while learning a shared motion prior from multiple manipulators. MPPI-MPC further provides online receding-horizon terminal recovery for residual execution errors and target changes. Evaluation on five manipulator configurations in NVIDIA Isaac Sim achieves a mean zero-shot success rate of 74.3% on unseen configurations. After target-platform data adaptation, deployment on KD7/A10 robots achieves 91.7%/96.7% static pose-reaching success and 86.7%/95.0% disturbance-recovery success.</p>
           <div class="local-media-slot" data-preview-media="gnn-framework" aria-live="polite"></div>
           <div class="local-media-slot" data-preview-media="gnn" aria-live="polite"></div>
         </div>
@@ -268,3 +268,4 @@
   <script src="/assets/site.js"></script>
 </body>
 </html>
+
