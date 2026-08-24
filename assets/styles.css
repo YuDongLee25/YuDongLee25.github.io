@@ -208,6 +208,9 @@ h4 { margin: 0 0 5px; font-size: .92rem; font-weight: 700; line-height: 1.4; }
 .media-item figcaption span { display: block; }
 .timeline-item:first-child, .education-item:first-child { padding-top: 0; border-top: 0; }
 .timeline-item p, .education-item p { margin: 3px 0 0; }
+.experience-points { margin: 9px 0 0; padding-left: 1.15rem; }
+.experience-points li { margin: 5px 0; padding-left: .18rem; }
+.experience-points li:last-child { margin-bottom: 0; }
 .education-main {
   display: grid;
   grid-template-columns: 58px minmax(0, 1fr);
@@ -287,3 +290,4 @@ h4 { margin: 0 0 5px; font-size: .92rem; font-weight: 700; line-height: 1.4; }
   a { color: #000; text-decoration: none; }
   .site-footer { background: #fff; }
 }
+
